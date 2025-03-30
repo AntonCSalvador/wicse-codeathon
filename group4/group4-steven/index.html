@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body {
+            background-color: blueviolet;
+        }
+
+        .images {
+            display:flex;
+            flex-direction: row;
+        }
+
+        button {
+            margin: 10px;
+            width: 150px;
+            height: 70px;
+            font-size: large;
+            font-family: "Comic Sans MS";
+            background-color: chartreuse;
+        }
+
+        .rainbow {
+            background-image: repeating-linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: rainbow_animation 1s ease-in-out infinite;
+            background-size: 400% 100%;
+        }
+
+        @keyframes rainbow_animation {
+            0%,100% {
+                background-position: 0 0;
+            }
+
+            50% {
+                background-position: 100% 0;
+            }
+        }
+    </style>
+    <body>
+        <h1>
+            Yipeee
+        </h1>
+        <div class="images">
+            <img width="250px" src="https://media.npr.org/assets/img/2013/05/06/ducky062way-47257e1bc12d333c4e0f17e763a683c52ad34f8c.jpg"/>
+            <img width="250px" src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p9360990_p_v12_at.jpg"/>    
+        </div>
+        <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.printables.com/&ved=2ahUKEwjlxqv3gLCMAxXvRDABHY5yLZ0QFnoECAkQAQ&usg=AOvVaw3CvA0SxCC_6-Ql0EOMSmON">
+            <button>
+                <p class="rainbow">print things here</p>
+            </button>
+        </a>
+        <a href="ducky.html">
+            <button>
+                <p class="rainbow">Ducky quak page</p>
+            </button>
+        </a>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+    <style>
+        body{
+            background-color: aliceblue;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+        img{
+            width: 20%;
+        }
+        p{
+
+        }
+        .rainbow{
+            background-image: repeating-linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red); 
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: rainbow_animation 6s ease-in-out infinite;
+            background-size: 400% 100%;
+        }
+        @keyframes rainbow_animation {
+            0%,100% {
+                background-position: 0 0;
+            }
+            
+            50% {
+                background-position: 100% 0;
+            }
+        }
+    </style>
+    <body>
+        <h1 class="rainbow">coolest website of All Time</h1>
+        <img src="https://i.pinimg.com/originals/87/6d/e7/876de7caa4228deed1a5e507b517d90f.gif" alt="cat skateboard spinning"/>
+        <p class="rainbow">
+            Welcome to Cool Town 😎
+        </p>
+        <button>
+            <a class="rainbow" href="https://ufosc.org" target="_blank">
+                become awesome
+            </a>
+        </button>
+    </body>
+</html>
